@@ -140,6 +140,7 @@ a:hover {
 }
 
 .post-content p {
+  text-align:justify;
   margin-bottom: 1.4rem;
 }
 
