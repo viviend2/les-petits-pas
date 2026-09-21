@@ -1,0 +1,190 @@
+/* ============ VARIABLES — palette pastel nature ============ */
+:root {
+  --color-sage: #a8b8a0;
+  --color-sand: #e8dfd3;
+  --color-terracotta: #d9a68c;
+  --color-sky: #b8cdd9;
+  --color-ink: #3a3a35;
+  --color-ink-light: #6b6a63;
+  --color-bg: #faf7f2;
+  --color-border: #e0dcd3;
+
+  --font-title: Georgia, "Iowan Old Style", serif;
+  --font-body: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+
+  --max-width-reading: 680px;
+  --spacing-unit: 1.5rem;
+}
+
+/* ============ RESET MINIMAL ============ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+a {
+  color: var(--color-terracotta);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ============ HEADER ============ */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: var(--max-width-reading);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-title {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.site-nav a {
+  margin-left: 1.2rem;
+  color: var(--color-ink-light);
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover {
+  color: var(--color-sage);
+}
+
+/* ============ MAIN CONTENT ============ */
+.site-main {
+  max-width: var(--max-width-reading);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* ============ HOME ============ */
+.home-intro h1 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: var(--color-ink);
+}
+
+/* ============ LISTES (Articles / Galerie) ============ */
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.preview a {
+  color: inherit;
+  display: block;
+}
+
+.preview h2 {
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+  margin: 0.8rem 0 0.3rem;
+  color: var(--color-ink);
+}
+
+.preview p {
+  color: var(--color-ink-light);
+  margin: 0 0 0.4rem;
+}
+
+.preview time {
+  font-size: 0.85rem;
+  color: var(--color-sage);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ============ ARTICLE ============ */
+.post h1 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  color: var(--color-ink);
+}
+
+.post time {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-sage);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+}
+
+.post-content p {
+  margin-bottom: 1.4rem;
+}
+
+.post-content h2,
+.post-content h3 {
+  font-family: var(--font-title);
+  color: var(--color-ink);
+  margin-top: 2.5rem;
+}
+
+.post-content img {
+  margin: 2rem 0;
+}
+
+.post-content blockquote {
+  border-left: 3px solid var(--color-sage);
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  color: var(--color-ink-light);
+  font-style: italic;
+}
+
+/* ============ FOOTER ============ */
+.site-footer {
+  max-width: var(--max-width-reading);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-ink-light);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 600px) {
+  body {
+    font-size: 16.5px;
+  }
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .site-nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
