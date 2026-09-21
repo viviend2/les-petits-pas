@@ -1,7 +1,6 @@
 baseURL = "https://viviend2.github.io/les-petits-pas/"
 languageCode = "fr-fr"
 title = "Les petits pas"
-theme = ""
 enableRobotsTXT = true
 
 [params]
