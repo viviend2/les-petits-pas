@@ -1,0 +1,25 @@
+baseURL = "https://viviend2.github.io/les-petits-pas/"
+languageCode = "fr-fr"
+title = "Les petits pas"
+theme = ""
+enableRobotsTXT = true
+
+[params]
+  noindex = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Articles"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "Galerie"
+    url = "/galerie/"
+    weight = 2
+  [[menu.main]]
+    name = "À propos"
+    url = "/a-propos/"
+    weight = 3
