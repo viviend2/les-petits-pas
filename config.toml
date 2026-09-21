@@ -4,21 +4,21 @@ title = "Les petits pas"
 enableRobotsTXT = true
 
 [params]
-  noindex = true
+noindex = true
 
 [markup.goldmark.renderer]
-  unsafe = true
+unsafe = true
 
 [menu]
-  [[menu.main]]
-    name = "Articles"
-    url = "/posts/"
-    weight = 1
-  [[menu.main]]
-    name = "Galerie"
-    url = "/galerie/"
-    weight = 2
-  [[menu.main]]
-    name = "À propos"
-    url = "/a-propos/"
-    weight = 3
+[[menu.main]]
+  name = "Articles"
+  url = "/posts/"
+  weight = 1
+[[menu.main]]
+  name = "Galerie"
+  url = "/galerie/"
+  weight = 2
+[[menu.main]]
+  name = "À propos"
+  url = "/a-propos/"
+  weight = 3
