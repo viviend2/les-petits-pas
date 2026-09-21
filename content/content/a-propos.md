@@ -4,4 +4,5 @@ menu: "main"
 weight: 3
 ---
 
-Texte à propos, à compléter plus tard.
+Un carnet de sorties, entre sentiers et respiration. Textes et photos glanés
+au fil des marches.
